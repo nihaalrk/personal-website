@@ -1,9 +1,10 @@
 header {
   display: block;
-  background-color: black;
+  background: linear-gradient(#D3D3D3, #F5F5F5, #D3D3D3);
   width: 100%;
   height: 50px;
-  color: white;
+  line-height:50px;
+  color: black;
 }
 
 #headerButtons {
@@ -14,6 +15,12 @@ header {
 
 .navButton {
   float: right;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+.navButton a {
+  text-decoration: none;
 }
 
 footer {
