@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import { browserHistory } from 'react-router';
-import HomePage from './home_page.jsx';
+import HomePage from './pages/home_page.jsx';
+import Resume from './pages/resume.jsx';
 import NavBar from './header-component/nav_bar.jsx';
 import Footer from './footer-component/footer.jsx';
 
@@ -11,7 +12,8 @@ class App extends Component {
       <Router>
         <div>
           <NavBar />
-          <Route name="home" exact path="/" component={HomePage} />
+          <Route exact path="/" component={HomePage} />
+          <Route path="/resume" component={Resume} />
         </div>
       </Router>
     )
