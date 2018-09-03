@@ -40,6 +40,19 @@ header {
   color: #888888;
 }
 
+.container {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.container .title-box {
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
 footer {
   display: block;
   width: 100%;
